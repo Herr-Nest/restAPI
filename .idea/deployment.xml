@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="rest" filePermissions="420" folderPermissions="493" notifyRemoteChanges="true">
+    <serverData>
+      <paths name="rest">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/opt/lampp/htdocs/restAPI" local="$PROJECT_DIR$" web="restAPI" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="restAPI">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

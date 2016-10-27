@@ -1,0 +1,10 @@
+RewriteEngine on
+
+
+RewriteRule login/auth index.php?pg=login&section=auth
+RewriteRule login index.php?pg=login
+RewriteRule signin index.php?pg=signIn
+RewriteRule tweetSaved index.php?pg=tweetSaved
+RewriteRule friends/([a-zA-Z0-9\_\-]+) index.php?pg=friendTweets&screenName=$1
+RewriteRule friends index.php?pg=friends
+RewriteRule friends-([0-9]+) wbsvc/moreFriend.php?cursor=$1

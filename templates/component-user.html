@@ -1,0 +1,29 @@
+<?php
+if($_TPL['open'])
+{
+?>
+<div class="row">
+<?php
+}
+?>
+    <div class="col-xs-12 col-md-6">
+        <div class="panel panel-default">
+            <img class='profile' src="<?=$_TPL['friend']->profileImageUrl?>">
+            <div class="col-md-offset-2">
+                <a href="<?=HTTP_HOST?>friends/<?=$_TPL['friend']->screenName?>"><?=$_TPL['friend']->name?></a>
+            </div>
+            <div class="col-md-offset-2">
+                <a href="<?=HTTP_HOST?>friends/<?=$_TPL['friend']->screenName?>">@<?=$_TPL['friend']->screenName?></a>
+            </div>
+            <div v>
+                <?=$_TPL['friend']->description?>
+            </div>
+        </div>
+    </div>
+<?php
+if($_TPL['close']){
+?>
+</div>
+<?php
+}
+?>
