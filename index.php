@@ -9,7 +9,6 @@
 
 $pg=Request::getParam('pg');
 if(!Session::isConnected() && $pg!='login'){
-    var_dump('vejsdkj');
     header('location:/restApi/login');
 }
 

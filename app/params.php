@@ -14,6 +14,7 @@ define('DIR_JS',HTTP_HOST."js/");
 
 define('DIR_CSS',HTTP_HOST."css/");
 
-define('API','http://172.16.60.7:8082/WebServiceRest/rest');
+//define('API','http://172.16.60.7:8082/WebServiceRest/rest');
+define('API','http://localhost:8090/WebServiceRest/rest');
 
 

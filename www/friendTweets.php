@@ -16,10 +16,10 @@ $listTweets=json_decode(file_get_contents(API."/APITwitter/friend/$screenName/tw
 $listTweetsHtml="";
 
 foreach ($listTweets as $tweet){
-    $listTweetsHtml .=  "<div>".$tweet->html."<a href='#'>Ajouter au Favoris</a></div>";
+    $listTweetsHtml .=  "<div>".$tweet->html."<span id='$tweet->id' class='addFav' href='javascript:void(0)'>Ajouter au Favoris</span></div>";
 }
 
-TPL::render('timeline.html',array('tweets'=>$listTweetsHtml));
+TPL::render('timeline.html',array('tweets'=>$listTweetsHtml,"user"=>$user));
 
 
 
